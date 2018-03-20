@@ -1,0 +1,38 @@
+label.responsiveIndicator {
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    &:before {
+        padding: 1px 6px;
+    } // Extra small devices (portrait phones, less than 576px)
+    @media (max-width: 575.99px) {
+        &:before {
+            background-color: #dc3545;
+            content: "Extra small devices";
+        }
+    } // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) and (max-width: 767.99px) {
+        &:before {
+            background-color: #fd7e14;
+            content: "Small devices";
+        }
+    } // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) and (max-width: 991.99px) {
+        &:before {
+            background-color: #ffc107;
+            content: "Medium devices";
+        }
+    } // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) and (max-width: 1199.99px) {
+        &:before {
+            background-color: #20c997;
+            content: "Large devices";
+        }
+    } // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        &:before {
+            background-color: #28a745;
+            content: "Extra large devices";
+        }
+    }
+}

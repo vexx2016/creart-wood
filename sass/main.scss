@@ -1,0 +1,222 @@
+@import '_variables';
+@import '_fluid-type(Mike)';
+@import '_include-media';
+@import 'particles/_navbar';
+@import 'particles/_hero';
+@import 'particles/_services-section';
+@import 'particles/_advantages-section';
+@import 'particles/_feedbacks-section';
+
+/* @import 'particles/_hero-section';
+@import 'particles/_projects';
+@import 'particles/_subscribe';
+@import 'particles/_footer'; */
+
+.here {
+    border: 1px dashed red;
+    &1 {
+        border: 1px dashed blue;
+    }
+    &2 {
+        border: 1px dashed green;
+    }
+}
+
+.fw- {
+    &100 {
+        font-weight: 100!important;
+    }
+    &200 {
+        font-weight: 200!important;
+    }
+    &400 {
+        font-weight: 400!important;
+    }
+    &500 {
+        font-weight: 500!important;
+    }
+    &600 {
+        font-weight: 600!important;
+    }
+    &700 {
+        font-weight: 700!important;
+    }
+    &800 {
+        font-weight: 800!important;
+    }
+    &900 {
+        font-weight: 900!important;
+    }
+}
+
+.bg-f8 {
+    background-color: #f8f8f8;
+}
+
+html {
+    @include interpolate(font-size, $grid-breakpoint-sm, $grid-breakpoint-xl, 13px, 16px);
+    position: relative;
+    min-height: 100%;
+    -webkit-text-size-adjust: 100%;
+    /* Font varient */
+    font-variant-ligatures: none;
+    -webkit-font-variant-ligatures: none;
+    /* Smoothing */
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    color: $txt-color-primary;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 69px;
+    color: $txt-color-primary;
+}
+
+
+/* button.btn:not(.btn-outline-primary) {
+    @include interpolate(font-size,
+    $grid-breakpoint-sm,
+    1900px,
+    13px,
+    26.5px);
+    font-weight: 400;
+    @include interpolate(padding-top,
+    $grid-breakpoint-sm,
+    1900px,
+    16px,
+    20px);
+    @include interpolate(padding-bottom,
+    $grid-breakpoint-sm,
+    1900px,
+    16px,
+    20px);
+    &.custom-colored {
+        background-color: #7686ff;
+        color: white;
+        box-shadow: .5px 1px 1px rgba(0, 0, 0, 0.3);
+        &:not(:disabled):not(.disabled):active {
+            color: #fff;
+        }
+    }
+    span {
+        display: inline-block;
+        @include interpolate(font-size,
+        $grid-breakpoint-sm,
+        1900px,
+        13px,
+        31px);
+        font-size: 1.95rem;
+        font-weight: 400;
+        +.oi {
+            font-size: 2.3rem;
+        }
+    }
+} */
+
+.custom-rounded {
+    border-radius: 32px!important;
+}
+
+.btn-outline-secondary:not([disabled]):not(.disabled).active,
+.btn-outline-secondary:not([disabled]):not(.disabled):active,
+.show>.btn-outline-secondary.dropdown-toggle {
+    box-shadow: 0 0 0 1px rgba(134, 142, 150, .5)
+}
+
+a:focus {
+    outline: none;
+}
+
+input,
+.form-control {
+    border-radius: 0;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+button,
+.btn,
+.btn-danger,
+.btn-danger:not(:disabled):not(.disabled).active:focus,
+.btn-danger:not(:disabled):not(.disabled):active:focus,
+input[type="checkbox"] {
+    &:focus {
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.btn-purple {
+    color: #fff;
+    background-color: $color-purple;
+    border-color: $color-purple;
+}
+
+.btn-purple:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .5);
+}
+
+.btn-purple:not(:disabled):not(.disabled):active:hover {
+    color: #fff;
+    background-color: $color-purple-active;
+    border-color: $color-purple-active;
+}
+
+.section-header {
+    line-height: 1;
+    color: $color-purple;
+}
+
+.section-header svg {
+    height: 1rem;
+    vertical-align: middle;
+}
+
+.octicon {
+    display: inline-block;
+    /* vertical-align: text-top; */
+    fill: currentColor;
+}
+
+.hr- {
+    &1 {
+        height: 1rem
+    }
+    &1-5 {
+        height: 1.5rem
+    }
+    &2 {
+        height: 2rem
+    }
+    &2-5 {
+        height: 2.5rem
+    }
+    &3 {
+        height: 3rem
+    }
+    &4 {
+        height: 4rem
+    }
+}
+
+.purple-line {
+    display: block;
+    height: 1px;
+    width: 50px;
+    border-bottom: 2px solid $color-purple;
+}
+
+.read-more {
+    .octicon {
+        vertical-align: middle;
+    }
+}

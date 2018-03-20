@@ -1,0 +1,30 @@
+//header
+.navbar {
+    background-color: white;
+    transition: all .2s;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    .order-bar {
+        .input-group-prepend label {
+            padding-right: 2.4rem;
+        }
+        button {
+            margin-left: -1.5rem;
+        }
+    }
+    &.scrolled {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        @include media('>tablet') {
+            background-color: rgba(255, 255, 255, 0.95);
+        }
+        .logo {
+            height: 28px;
+        }
+    }
+    .only-mobile-icons {}
+    .logo {
+        height: 38px;
+        transition: height .2s;
+    }
+}

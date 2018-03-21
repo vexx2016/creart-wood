@@ -178,6 +178,9 @@ a:hover {
     color: $color-purple;
     font-size: 2.3rem;
     letter-spacing: 2.1px;
+    @include media('<'+$grid-breakpoint-sm) {
+        font-size: 1.9rem;
+    }
 }
 
 .section-header svg {
@@ -242,8 +245,10 @@ a {
 }
 
 .container-fluid.custom-gap {
-    padding-left: 4.3rem;
-    padding-right: 4.3rem;
+    @include media('>'+$grid-breakpoint-md) {
+        padding-left: 4.3rem;
+        padding-right: 4.3rem;
+    }
 }
 
 .read-more {

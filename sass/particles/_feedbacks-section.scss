@@ -1,12 +1,25 @@
 .feedbacks-section {
     .carousel-indicators {
+        top: 0;
+        @include media('<'+$grid-breakpoint-sm) {
+            margin-right: 0;
+        }
         li {
+            transition: height .1s, width .1s;
             height: 42px;
             width: 42px;
             position: relative;
+            @include media('<'+$grid-breakpoint-sm) {
+                height: 2.5rem;
+                width: 2.5rem;
+            }
             &.active {
                 height: 55px;
                 width: 55px;
+                @include media('<'+$grid-breakpoint-sm) {
+                    height: 3.5rem;
+                    width: 3.5rem;
+                }
                 img {
                     border-width: 3px;
                     border-color: rgb(96, 123, 205);
@@ -22,7 +35,40 @@
                 left: 0;
                 height: 100%;
                 width: 100%;
+                border-radius: 50%;
             }
+        }
+    }
+    .controls {
+        &>div {
+            position: absolute;
+            top: -1.25rem;
+            color: $color-purple;
+            left: 0;
+            @include media('>'+$grid-breakpoint-lg) {
+                left: 7.5rem;
+            }
+        }
+    }
+    .carousel-item p {
+        font-size: 1.2rem;
+        line-height: 1.45;
+        margin-bottom: 0.6rem!important;
+        @include media('>'+$grid-breakpoint-md) {
+            padding-right: 9.6rem;
+            padding-left: 7.8rem;
+        }
+    }
+    .quote-img {
+        height: 37px;
+        margin-bottom: 4rem;
+    }
+    .purple-line {
+        margin-bottom: 1rem;
+    }
+    .author {
+        @include media('>'+$grid-breakpoint-sm) {
+            margin-right: 9.8rem;
         }
     }
 }

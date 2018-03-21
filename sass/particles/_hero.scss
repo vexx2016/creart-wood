@@ -1,9 +1,17 @@
 .hero-section {
     background-image: url('../img/jumbotron.png');
     background-size: cover;
-
     .jumbotron {
         background-color: transparent;
-        min-height: 31rem;
+        min-height: 34.8rem;
+    }
+    h1 {
+        line-height: 1;
+        font-size: 3.2rem;
+        margin-bottom: 2rem;
+        margin-top: 1.5rem;
+    }
+    p {
+        font-size: 0.8rem;
     }
 }

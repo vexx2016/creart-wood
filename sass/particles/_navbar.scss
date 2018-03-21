@@ -2,11 +2,19 @@
 .navbar {
     background-color: white;
     transition: all .2s;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 1.67rem;
+    padding-bottom: 1.67rem;
+    .container {
+        position: relative;
+        @include media('>'+$grid-breakpoint-md) {
+            margin-right: 1.4rem;
+            margin-left: 1.4rem;
+        }
+    }
     .order-bar {
         .input-group-prepend label {
             padding-right: 2.4rem;
+            font-size: 0.75rem;
         }
         button {
             margin-left: -1.5rem;
@@ -24,7 +32,16 @@
     }
     .only-mobile-icons {}
     .logo {
+        display: inline-block!important;
         height: 38px;
         transition: height .2s;
+    }
+    .navbar-brand {
+        position: absolute; // top: 50%;
+        left: 50%; // transform: translateY(-50%);
+        transform: translateX(-50%);
+    }
+    .input-group-append label {
+        font-size: 0.75rem;
     }
 }

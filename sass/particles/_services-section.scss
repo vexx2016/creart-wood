@@ -1,9 +1,38 @@
 .services-section {
-    /* 23 - 116 */
+    &__item {
+        @include media('>'+$grid-breakpoint-md) {
+            padding-left: 0.8rem!important;
+            padding-right: 9.5rem!important;
+            &:nth-child(odd) {
+                padding-left: 0!important;
+            }
+        }
+    }
     &__item__header {
-        font-size: 1.4rem;
+        padding-left: 1.7rem;
+        margin-top: -0.9rem;
+        font-size: 1.78rem;
+        letter-spacing: 2.5px;
     }
     &__item__img {
-        height: 7.25rem;
+        height: 6.45rem;
     }
+    &__item__description {
+        padding-left: 1.7rem;
+        font-size: 0.8rem;
+    }
+    .read-more {
+        padding-left: 1.7rem;
+    }
+    /*  @include media('<'+$grid-breakpoint-md) {
+    padding-left: 0;
+    padding-right: 0;
+    &__item,
+    &__item__header,
+    &__item__description,
+    .read-more {
+        padding-left: 0;
+        padding-right: 0;
+    }
+} */
 }

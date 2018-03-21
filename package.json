@@ -12,7 +12,8 @@
     "gulp-combine-mq": "^0.4.0",
     "gulp-cssmin": "^0.2.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "pixel-glass": "^1.0.13"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,0 +1,31 @@
+.contacts-section {
+    .octicon {
+        vertical-align: middle;
+        margin-right: 1.9rem;
+    }
+    .logo {
+        display: inline-block;
+        height: 25px;
+    }
+    input,
+    textarea {
+        background-color: $form-bg;
+    }
+    li {
+        margin-bottom: 0.8rem;
+        font-size: 1.3rem;
+        line-height: 1;
+    }
+    form {
+        label {
+            font-size: .75rem;
+        }
+        input {
+            line-height: 1.1;
+        }
+        .form-group {
+            margin-bottom: 0.8rem;
+            resize: none;
+        }
+    }
+}

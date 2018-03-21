@@ -6,6 +6,8 @@
 @import 'particles/_services-section';
 @import 'particles/_advantages-section';
 @import 'particles/_feedbacks-section';
+@import 'particles/_corp-style';
+@import 'particles/_contacts-section';
 
 /* @import 'particles/_hero-section';
 @import 'particles/_projects';
@@ -174,6 +176,8 @@ a:hover {
 .section-header {
     line-height: 1;
     color: $color-purple;
+    font-size: 2.3rem;
+    letter-spacing: 2.1px;
 }
 
 .section-header svg {
@@ -208,15 +212,44 @@ a:hover {
     }
 }
 
+.p {
+    &x-2_5 {
+        padding-right: 2.5rem!important;
+        padding-left: 2.5rem!important;
+    }
+}
+
 .purple-line {
     display: block;
     height: 1px;
-    width: 50px;
+    width: 59px;
     border-bottom: 2px solid $color-purple;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .read-more {
     .octicon {
         vertical-align: middle;
     }
+}
+
+a {
+    color: $color-purple;
+    &:hover {
+        color: $color-purple-active;
+    }
+}
+
+.container-fluid.custom-gap {
+    padding-left: 4.3rem;
+    padding-right: 4.3rem;
+}
+
+.read-more {
+    font-size: 0.75rem;
+}
+
+small {
+    font-size: 0.58rem;
 }

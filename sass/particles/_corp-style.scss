@@ -1,0 +1,30 @@
+.corp-style {
+    p {
+        font-size: 0.8rem;
+    }
+    &__lead {
+        margin-bottom: 2.2rem;
+    }
+    &__description {
+        line-height: 2.11;
+        margin-bottom: 3.3rem;
+    }
+}
+
+.fixed-aspect-ratio-container {
+    width: 100%;
+    padding-top: 93%;
+    position: relative;
+    &__image-main {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 75.3%;
+    }
+    &__image-sub {
+        position: absolute;
+        left: 0;
+        bottom: 5%;
+        width: 54.3%;
+    }
+}

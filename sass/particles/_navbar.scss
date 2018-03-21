@@ -30,7 +30,7 @@
             background-color: rgba(255, 255, 255, 0.95);
         }
         .logo {
-            height: 28px;
+            height: 30px;
         }
     }
     .only-mobile-icons {}
@@ -38,14 +38,31 @@
         display: inline-block!important;
         height: 38px;
         transition: height .2s;
+        @include media('<'+$grid-breakpoint-sm) {
+            height: 30px;
+        }
     }
     .navbar-brand {
-        position: absolute; // top: 50%;
-        left: 50%; // transform: translateY(-50%);
+        position: absolute;
+        right: 50%;
         transform: translateX(-50%);
         top: 0;
+        @include media('<'+$grid-breakpoint-sm) {
+            right: 0;
+            transform: none;
+        }
     }
     .input-group-append label {
         font-size: 0.75rem;
+    }
+    .col-auto {
+        @include media('<'+$grid-breakpoint-sm) {
+            padding-left: 0;
+        }
+        .navbar-toggler {
+            @include media('<'+$grid-breakpoint-sm) {
+                padding-left: 0;
+            }
+        }
     }
 }

@@ -769,7 +769,7 @@
             </a>
 
             <div class="col-auto order-3">
-                <div class="input-group input-group-sm order-bar mr-md-2">
+                <div class="input-group input-group-sm order-bar mr-md-2 d-none d-md-flex">
                     <div class="input-group-prepend">
                         <label class="input-group-text custom-rounded bg-white pl-3">Консультация</label>
                     </div>
@@ -778,7 +778,7 @@
             </div>
 
             <div class="collapse navbar-collapse order-4" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto px-4">
                     <li class="nav-item">
                         <a class="nav-link" href="#!">Услуги</a>
                     </li>
@@ -796,6 +796,14 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#!">Контакты</a>
+                    </li>
+                    <li class="nav-item py-3">
+                        <div class="input-group input-group-sm order-bar mr-md-2 d-flex d-md-none">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text custom-rounded bg-white pl-3">Консультация</label>
+                            </div>
+                            <button class="btn custom-rounded btn-purple btn-sm px-2_5" type="button">Заказать</button>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -1326,6 +1334,21 @@
                 $('nav.navbar').addClass('scrolled');
             } else {
                 $('nav.navbar').removeClass('scrolled');
+            }
+        });
+
+
+        /*$(".navbar a").click(function () {
+            $('html, body').animate({
+                scrollTop: $($(this).data('scrollto')).offset().top
+            }, 500);
+        });*/
+
+        $(document).on("click", function (event) {
+            var $trigger = $(".navbar-collapse.collapse.show");
+            var $menuItem = $(".navbar-collapse.collapse.show a.nav-link");
+            if (($trigger !== event.target && !$trigger.has(event.target).length) || ($menuItem !== event.target && !$menuItem.has(event.target).length)) {
+                $('.navbar-collapse.collapse.show').removeClass('show')
             }
         });
     </script>

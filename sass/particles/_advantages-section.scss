@@ -15,5 +15,13 @@
         font-size: 0.8rem;
         line-height: 1.63;
         margin-bottom: 0.2rem;
+        @include media('<'+$grid-breakpoint-md) {
+            padding-left: 1.7rem;
+        }
+    }
+    .read-more {
+        @include media('<'+$grid-breakpoint-md) {
+            padding-left: 1.7rem;
+        }
     }
 }

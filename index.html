@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.min.css">
+    <script src="images.js"></script>
     <title>Creart Wood</title>
 </head>
 
@@ -703,7 +704,7 @@
 
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-light">
-        <div class="container p-0 justify-content-between">
+        <div class="container-fluid p-0 justify-content-between">
 
             <div class="col-auto order-1">
                 <div class="input-group">
@@ -780,22 +781,22 @@
             <div class="collapse navbar-collapse order-4" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto px-4">
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Услуги</a>
+                        <a class="nav-link" href="javascript:void(0)" data-scrollto="#services-section">Услуги</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Преимущества</a>
+                        <a class="nav-link" href="javascript:void(0)" data-scrollto="#advantages-section">Преимущества</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Примеры работ</a>
+                        <a class="nav-link" href="javascript:void(0)" data-scrollto="#examples-section">Примеры работ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Отзывы</a>
+                        <a class="nav-link" href="javascript:void(0)" data-scrollto="#feedbacks-section">Отзывы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Корпоративный стиль</a>
+                        <a class="nav-link" href="javascript:void(0)" data-scrollto="#corp-style">Корпоративный стиль</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Контакты</a>
+                        <a class="nav-link" href="javascript:void(0)" data-scrollto="#contacts-section">Контакты</a>
                     </li>
                     <li class="nav-item py-3">
                         <div class="input-group input-group-sm order-bar mr-md-2 d-flex d-md-none">
@@ -810,7 +811,7 @@
         </div>
     </nav>
 
-    <header class="hero-section">
+    <header class="hero-section" id="hero-section">
         <div class="jumbotron jumbotron-fluid d-flex flex-row align-items-center">
             <div class="container text-white">
                 <div id="carouselHeroIndicators" class="carousel slide" data-ride="carousel" data-interval="15000" data-keyboard="true">
@@ -862,7 +863,7 @@
         <!-- Divider -->
         <div class="col-12 my-5 pt-2"></div>
 
-        <div class="row mb-5 services-section">
+        <div class="row mb-5 services-section" id="services-section">
             <div class="col-12">
                 <h1 class="section-header m-0 fw-900">Услуги
                     <!-- <svg version="1.1" viewBox="0 0 10 16" class="octicon" aria-hidden="true">
@@ -871,8 +872,8 @@
                 </h1>
                 <label class="purple-line"></label>
             </div>
-            <div class="col-md-6 pr-md-5 pl-md-3 services-section__item mb-4 mb-md-1">
-                <img src="/img/wood-r.png" alt="" class="services-section__item__img mt-3">
+            <div class="col-md-6 pr-md-5 pl-md-3 services-section__item mb-5 mb-md-1">
+                <img src="/img/wood-r.jpg" alt="" class="services-section__item__img mt-3">
                 <h3 class="services-section__item__header mb-3 fw-900">Резка</h3>
                 <p class="services-section__item__description text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum in deserunt non ab tenetur repellat sapiente
                     praesentium deleniti voluptas amet.</p>
@@ -882,8 +883,8 @@
                     </svg>
                 </a>
             </div>
-            <div class="col-md-6 pr-md-5 pl-md-3 services-section__item mb-4 mb-md-1">
-                <img src="/img/wood-g.png" alt="" class="services-section__item__img mt-3">
+            <div class="col-md-6 pr-md-5 pl-md-3 services-section__item mb-5 mb-md-1">
+                <img src="/img/wood-g.jpg" alt="" class="services-section__item__img mt-3">
                 <h3 class="services-section__item__header mb-3 fw-900">Гравировка</h3>
                 <p class="services-section__item__description text-muted">Id, dolorem numquam. Accusantium perspiciatis repudiandae, aliquam deserunt itaque harum quae placeat rerum
                     porro reprehenderit illo, corrupti autem illum ullam!</p>
@@ -893,8 +894,8 @@
                     </svg>
                 </a>
             </div>
-            <div class="col-md-6 pr-md-5 pl-md-3 services-section__item mb-4 mb-md-1">
-                <img src="/img/wood-m.png" alt="" class="services-section__item__img mt-3">
+            <div class="col-md-6 pr-md-5 pl-md-3 services-section__item mb-5 mb-md-1">
+                <img src="/img/wood-m.jpg" alt="" class="services-section__item__img mt-3">
                 <h3 class="services-section__item__header mb-3 fw-900">Моделирование и дизайн</h3>
                 <p class="services-section__item__description text-muted">A suscipit, cupiditate deleniti vitae nihil dignissimos distinctio, quaerat nesciunt ad modi quas et quae
                     ratione hic alias error natus.</p>
@@ -904,8 +905,8 @@
                     </svg>
                 </a>
             </div>
-            <div class="col-md-6 pr-md-5 pl-md-3 services-section__item mb-4 mb-md-1">
-                <img src="/img/wood-p.png" alt="" class="services-section__item__img mt-3">
+            <div class="col-md-6 pr-md-5 pl-md-3 services-section__item mb-5 mb-md-1">
+                <img src="/img/wood-p.jpg" alt="" class="services-section__item__img mt-3">
                 <h3 class="services-section__item__header mb-3 fw-900">Продажа готовой продукции</h3>
                 <p class="services-section__item__description text-muted">Delectus voluptates fugiat explicabo tempora eligendi, illo rerum, repellendus earum atque ab cupiditate
                     quo quia doloremque, vitae sint aperiam fuga?</p>
@@ -920,7 +921,7 @@
         <!-- Divider -->
         <!-- <div class="col-12 my-5 pt-2"></div> -->
 
-        <div class="row mb-5 advantages-section">
+        <div class="row mb-5 advantages-section" id="advantages-section">
             <div class="col-12">
                 <h1 class="section-header m-0 fw-900">Преимущества</h1>
                 <label class="purple-line"></label>
@@ -1016,22 +1017,20 @@
         <!-- Divider -->
         <!-- <div class="col-12 mb-1"></div> -->
 
-        <div class="row mb-5">
+        <div class="row mb-5 examples-section" id="examples-section">
             <div class="col-12">
                 <h1 class="section-header m-0 fw-900">Примеры работ</h1>
                 <label class="purple-line"></label>
             </div>
             <div class="col-12">
-                <div class="" style="height:386px; background: yellow;">
-                    React component
-                </div>
+                <div id="root"></div>
             </div>
         </div>
 
         <!-- Divider -->
         <div class="col-12 my-5 pt-2"></div>
 
-        <div class="row mb-5 feedbacks-section">
+        <div class="row mb-5 feedbacks-section" id="feedbacks-section">
             <div class="col-12">
                 <h1 class="section-header m-0 fw-900">Отзывы</h1>
                 <label class="purple-line"></label>
@@ -1137,20 +1136,21 @@
         <!-- Divider -->
         <div class="col-12 my-5 pt-4 pb-3"></div>
 
-        <div class="row mb-5 corp-style">
+        <div class="row mb-5 corp-style" id="corp-style">
             <div class="col-12">
                 <h1 class="section-header m-0 fw-900">Корпоративный стиль</h1>
+                <label class="purple-line d-block d-sm-none"></label>
             </div>
-            <div class="col-sm-8 col-md-6">
-                <label class="purple-line"></label>
+            <div class="col-sm-8 col-md-6 order-2 order-sm-1">
+                <label class="purple-line d-none d-sm-block"></label>
                 <p class="corp-style__lead pt-2 fw-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas animi saepe architecto impedit blanditiis at!</p>
                 <p class="text-muted corp-style__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, libero? Ipsam soluta, ducimus eos et
                     quasi itaque facilis voluptatum. A, animi totam. Veniam sit recusandae modi, sequi ipsa molestias, laboriosam
                     dolorem architecto alias totam at quas ab impedit, quisquam quibusdam quaerat? Sint!</p>
                 <button class="btn custom-rounded btn-purple btn-sm px-2_5" type="button">Заказать</button>
             </div>
-            <div class="col-sm-4 col-md-6 pl-lg-4 pt-5 pt-md-0">
-                <div class="fixed-aspect-ratio-container mt-5 mt-md-0">
+            <div class="col-sm-4 col-md-6 pl-lg-4 pt-sm-5 pt-md-0 order-1 order-sm-2">
+                <div class="fixed-aspect-ratio-container mt-sm-5 mt-md-0">
                     <img src="img/corp-style_main.png" alt="" class="fixed-aspect-ratio-container__image-main">
                     <img src="img/corp-style_sub.png" alt="" class="fixed-aspect-ratio-container__image-sub">
                 </div>
@@ -1159,7 +1159,7 @@
 
 
 
-        <footer class="row contacts-section pt-md-4">
+        <footer class="row contacts-section pt-md-4" id="contacts-section">
             <div class="col-12 order-1">
                 <h1 class="section-header m-0 fw-900">Контакты</h1>
             </div>
@@ -1337,13 +1337,6 @@
             }
         });
 
-
-        /*$(".navbar a").click(function () {
-            $('html, body').animate({
-                scrollTop: $($(this).data('scrollto')).offset().top
-            }, 500);
-        });*/
-
         $(document).on("click", function (event) {
             var $trigger = $(".navbar-collapse.collapse.show");
             var $menuItem = $(".navbar-collapse.collapse.show a.nav-link");
@@ -1351,7 +1344,14 @@
                 $('.navbar-collapse.collapse.show').removeClass('show')
             }
         });
+
+        $(".navbar a").click(function () {
+                $('html, body').animate({
+                    scrollTop: $($(this).data('scrollto')).offset().top - 70
+                }, 500);
+            });
     </script>
+    <script type="text/javascript" src="js/main.410955c7.js"></script>
 </body>
 
 </html>

@@ -47,20 +47,21 @@
         right: 50%;
         transform: translateX(-50%);
         top: 0;
-        @include media('<'+$grid-breakpoint-sm) {
+        @include media('<'+$grid-breakpoint-md) {
             right: 0;
             transform: none;
+            position: relative;
         }
     }
     .input-group-append label {
         font-size: 0.75rem;
     }
-    .col-auto {
-        @include media('<'+$grid-breakpoint-sm) {
+    .col-auto.order-1 {
+        @include media('<'+$grid-breakpoint-md) {
             padding-left: 0;
         }
         .navbar-toggler {
-            @include media('<'+$grid-breakpoint-sm) {
+            @include media('<'+$grid-breakpoint-md) {
                 padding-left: 0;
             }
         }

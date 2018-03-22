@@ -8,6 +8,7 @@
 @import 'particles/_feedbacks-section';
 @import 'particles/_corp-style';
 @import 'particles/_contacts-section';
+@import 'particles/_examples-section';
 
 /* @import 'particles/_hero-section';
 @import 'particles/_projects';
@@ -70,6 +71,9 @@ html {
     -webkit-font-smoothing: antialiased;
     text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
     color: $txt-color-primary;
+    @include media('<'+$grid-breakpoint-sm) {
+        font-size: 14px;
+    }
 }
 
 body {

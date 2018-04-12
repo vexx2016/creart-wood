@@ -1,6 +1,40 @@
 .hero-section {
-    background-image: url('../img/jumbotron.jpg');
+    background-color: $color-purple;
     background-size: cover;
+    @include media('<=993px') {
+        background-image: url('../img/jumbotron/scale_w_993.jpg');
+    }
+    @include media('>993px',
+    '<=1459px') {
+        background-image: url('../img/jumbotron/scale_w_1459.jpg');
+    }
+    @include media('>1459px',
+    '<=1830px') {
+        background-image: url('../img/jumbotron/scale_w_1830.jpg');
+    }
+    @include media('>1830px',
+    '<=2143px') {
+        background-image: url('../img/jumbotron/scale_w_2143.jpg');
+    }
+    @include media('>2143px',
+    '<=2429px') {
+        background-image: url('../img/jumbotron/scale_w_2429.jpg');
+    }
+    @include media('>2429px',
+    '<=2698px') {
+        background-image: url('../img/jumbotron/scale_w_2698.jpg');
+    }
+    @include media('>2698px',
+    '<=2948px') {
+        background-image: url('../img/jumbotron/scale_w_2948.jpg');
+    }
+    @include media('>2948px',
+    '<=3187px') {
+        background-image: url('../img/jumbotron/scale_w_3187.jpg');
+    }
+    @include media('>3187px') {
+        background-image: url('../img/jumbotron/scale_w_3200.jpg');
+    }
     .jumbotron {
         background-color: transparent;
         min-height: 34.8rem;
@@ -15,3 +49,5 @@
         font-size: 0.8rem;
     }
 }
+
+/* 320 993 1459 1830 2143 2429 2698 2948 3187 3200 */

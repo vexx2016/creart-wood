@@ -5,8 +5,8 @@
     padding-top: 1.67rem;
     padding-bottom: 1.67rem;
     @include media('>'+$grid-breakpoint-md) {
-        padding-left: 4.3rem!important;
-        padding-right: 4.3rem!important;
+        padding-left: 4.3rem !important;
+        padding-right: 4.3rem !important;
     }
     .container-fluid {
         position: relative;
@@ -22,6 +22,7 @@
         .input-group-prepend label {
             padding-right: 2.4rem;
             font-size: 0.75rem;
+            cursor: pointer;
         }
         button {
             margin-left: -1.5rem;
@@ -39,7 +40,7 @@
     }
     .only-mobile-icons {}
     .logo {
-        display: inline-block!important;
+        display: inline-block !important;
         height: 38px;
         transition: height .2s;
         @include media('<'+$grid-breakpoint-sm) {
@@ -64,6 +65,21 @@
         padding-left: 0;
         .navbar-toggler {
             padding-left: 0;
+        }
+    }
+}
+
+ul.popover-consult {
+    li {
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+    svg {
+        vertical-align: middle;
+    }
+    .social-icons {
+        img {
+            height: 1.8rem;
         }
     }
 }

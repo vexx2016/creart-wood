@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/logo.png">
     <style>
         .octicon,
         svg {
@@ -19,6 +20,111 @@
 </head>
 
 <body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="linkModal" tabindex="-1" role="dialog" aria-labelledby="linkModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="linkModalLabel">Header</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, non. Praesentium quibusdam facilis
+                        dolor vero, quis nam similique laudantium ut consequatur, dolorum, accusantium blanditiis nisi.</p>
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn custom-rounded btn-purple btn-sm px-3 mx-auto" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="howToOrderModal" tabindex="-1" role="dialog" aria-labelledby="howToOrderModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="howToOrderModalLabel">Как заказать</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled">
+                                <li class="fw-300 mb-3">
+                                    <svg version="1.1" viewBox="0 0 10 16" class="octicon text-muted hr-2 mr-3 align-middle" aria-hidden="true">
+                                        <use xlink:href="#device-mobile" />
+                                    </svg>
+                                    +38 067 032 21 45
+                                </li>
+                                <li class="fw-300 mb-3">
+                                    <svg version="1.1" viewBox="0 0 10 16" class="octicon text-muted hr-2 mr-3 align-middle" aria-hidden="true">
+                                        <use xlink:href="#mail" />
+                                    </svg>
+                                    wood@creart.com
+                                </li>
+                                <li class="fw-300 mb-3">
+                                    <svg version="1.1" viewBox="0 0 10 16" class="octicon text-muted hr-2 mr-3 align-middle" aria-hidden="true">
+                                        <use xlink:href="#location" />
+                                    </svg>
+                                    ул. Прямая, д. 9
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-center">
+                                <a class="btn custom-rounded btn-purple btn-sm px-2_5 text-white mx-auto mb-3 btn-block">Скачать прайс-лист</a>
+                                <a class="btn custom-rounded btn-purple btn-sm px-2_5 text-white mx-auto mb-3 btn-block">Готовые работы</a>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="javascript:void(0)">
+                                    <img src="img/icons/facebook.svg" alt="" class="hr-2">
+                                </a>
+                                <a href="javascript:void(0)">
+                                    <img src="img/icons/instagram.svg" alt="" class="hr-2">
+                                </a>
+                                <a href="javascript:void(0)">
+                                    <img src="img/icons/telegram.svg" alt="" class="hr-2">
+                                </a>
+                                <a href="javascript:void(0)">
+                                    <img src="img/icons/viber.svg" alt="" class="hr-2">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn custom-rounded btn-purple btn-sm px-3 mx-auto" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="corpStyleModal" tabindex="-1" role="dialog" aria-labelledby="corpStyleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="corpStyleModalLabel">Corp. style</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, non. Praesentium quibusdam facilis
+                        dolor vero, quis nam similique laudantium ut consequatur, dolorum, accusantium blanditiis nisi.</p>
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn custom-rounded btn-purple btn-sm px-3 mx-auto" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div hidden>
         <svg xmlns="http://www.w3.org/2000/svg" style="width:0;height:0;visibility:hidden;">
@@ -113,9 +219,29 @@
             <div class="col-auto order-3 d-none d-md-flex pr-0">
                 <div class="input-group input-group-sm order-bar mr-0">
                     <div class="input-group-prepend">
-                        <label class="input-group-text custom-rounded bg-white pl-3">Консультация</label>
+                        <label class="input-group-text custom-rounded bg-white pl-3" data-toggle="popover" data-html="true" data-container="body"
+                            data-placement="bottom" title="" data-content='<ul class="list-unstyled popover-consult">
+                                <li class="fw-300">
+                                    <svg version="1.1" viewBox="0 0 10 16" class="octicon text-muted hr-1 mr-3" aria-hidden="true">
+                                        <use xlink:href="#device-mobile" />
+                                    </svg>+38 067 032 21 45</li>
+                                    <li class="fw-300">
+                                        <svg version="1.1" viewBox="0 0 10 16" class="octicon text-muted hr-1 mr-3" aria-hidden="true">
+                                        <use xlink:href="#mail" />
+                                    </svg>wood@creart.com</li>
+                                    <li class="fw-300 mb-3">
+                                        <svg version="1.1" viewBox="0 0 10 16" class="octicon text-muted hr-1 mr-3" aria-hidden="true">
+                                        <use xlink:href="#location" />
+                                    </svg>ул. Прямая, д. 9</li>
+                                    <li class="fw-300 social-icons d-flex justify-content-between">
+                                        <a href="javascript:void(0)"><img src="img/icons/facebook.svg" alt="" class=""></a>
+                                        <a href="javascript:void(0)"><img src="img/icons/instagram.svg" alt=""></a>
+                                        <a href="javascript:void(0)"><img src="img/icons/telegram.svg" alt=""></a>
+                                        <a href="javascript:void(0)"><img src="img/icons/viber.svg" alt=""></a>
+                                    </li>
+                                </ul>'>Консультация</label>
                     </div>
-                    <button class="btn custom-rounded btn-purple btn-sm px-2_5" type="button">Заказать</button>
+                    <button class="btn custom-rounded btn-purple btn-sm px-2_5" type="button" data-toggle="modal" data-target="#howToOrderModal">Как заказать</button>
                 </div>
             </div>
 
@@ -140,14 +266,18 @@
                         <a class="nav-link" href="javascript:void(0)" data-scrollto="#contacts-section">Контакты</a>
                     </li>
                     <li class="nav-item py-3">
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <div class="d-inline-block mx-auto">
                         <div class="input-group input-group-sm order-bar mr-md-2 d-flex d-md-none">
                             <div class="input-group-prepend">
                                 <label class="input-group-text custom-rounded bg-white pl-3">Консультация</label>
                             </div>
-                            <button class="btn custom-rounded btn-purple btn-sm px-2_5" type="button">Заказать</button>
+                            <button class="btn custom-rounded btn-purple btn-sm px-2_5" type="button" data-toggle="modal" data-target="#howToOrderModal">Как заказать</button>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -218,7 +348,7 @@
                 <h3 class="services-section__item__header mb-3 fw-900">Резка</h3>
                 <p class="services-section__item__description text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum in deserunt non ab tenetur repellat sapiente
                     praesentium deleniti voluptas amet.</p>
-                <a href="javascript:void(0)" class="read-more">Подробнее
+                <a href="javascript:void(0)" class="read-more" data-toggle="modal" data-target="#linkModal">Подробнее
                     <svg version="1.1" viewBox="0 0 10 16" class="octicon hr-1" aria-hidden="true">
                         <use xlink:href="#chevron-right" />
                     </svg>
@@ -229,7 +359,7 @@
                 <h3 class="services-section__item__header mb-3 fw-900">Гравировка</h3>
                 <p class="services-section__item__description text-muted">Id, dolorem numquam. Accusantium perspiciatis repudiandae, aliquam deserunt itaque harum quae placeat rerum
                     porro reprehenderit illo, corrupti autem illum ullam!</p>
-                <a href="javascript:void(0)" class="read-more">Подробнее
+                <a href="javascript:void(0)" class="read-more" data-toggle="modal" data-target="#linkModal">Подробнее
                     <svg version="1.1" viewBox="0 0 10 16" class="octicon hr-1" aria-hidden="true">
                         <use xlink:href="#chevron-right" />
                     </svg>
@@ -240,7 +370,7 @@
                 <h3 class="services-section__item__header mb-3 fw-900">Моделирование и дизайн</h3>
                 <p class="services-section__item__description text-muted">A suscipit, cupiditate deleniti vitae nihil dignissimos distinctio, quaerat nesciunt ad modi quas et quae
                     ratione hic alias error natus.</p>
-                <a href="javascript:void(0)" class="read-more">Подробнее
+                <a href="javascript:void(0)" class="read-more" data-toggle="modal" data-target="#linkModal">Подробнее
                     <svg version="1.1" viewBox="0 0 10 16" class="octicon hr-1" aria-hidden="true">
                         <use xlink:href="#chevron-right" />
                     </svg>
@@ -251,7 +381,7 @@
                 <h3 class="services-section__item__header mb-3 fw-900">Продажа готовой продукции</h3>
                 <p class="services-section__item__description text-muted">Delectus voluptates fugiat explicabo tempora eligendi, illo rerum, repellendus earum atque ab cupiditate
                     quo quia doloremque, vitae sint aperiam fuga?</p>
-                <a href="javascript:void(0)" class="read-more">Подробнее
+                <a href="javascript:void(0)" class="read-more" data-toggle="modal" data-target="#linkModal">Подробнее
                     <svg version="1.1" viewBox="0 0 10 16" class="octicon hr-1" aria-hidden="true">
                         <use xlink:href="#chevron-right" />
                     </svg>
@@ -275,11 +405,11 @@
                 </h3>
                 <p class="text-muted advantages-section__item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua.</p>
-                <a href="javascript:void(0)" class="read-more">Подробнее
+                <!-- <a href="javascript:void(0)" class="read-more" data-toggle="modal" data-target="#linkModal">Подробнее
                     <svg version="1.1" viewBox="0 0 10 16" class="octicon hr-1" aria-hidden="true">
                         <use xlink:href="#chevron-right" />
                     </svg>
-                </a>
+                </a> -->
             </div>
 
             <div class="col-md-6 col-lg-4 advantages-section__item">
@@ -290,11 +420,11 @@
                 <p class="text-muted advantages-section__item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua.
                 </p>
-                <a href="javascript:void(0)" class="read-more">Подробнее
+                <!-- <a href="javascript:void(0)" class="read-more" data-toggle="modal" data-target="#linkModal">Подробнее
                     <svg version="1.1" viewBox="0 0 10 16" class="octicon hr-1" aria-hidden="true">
                         <use xlink:href="#chevron-right" />
                     </svg>
-                </a>
+                </a> -->
             </div>
 
             <div class="col-md-6 col-lg-4 advantages-section__item">
@@ -304,11 +434,11 @@
                 </h3>
                 <p class="text-muted advantages-section__item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua.</p>
-                <a href="javascript:void(0)" class="read-more">Подробнее
+                <!-- <a href="javascript:void(0)" class="read-more" data-toggle="modal" data-target="#linkModal">Подробнее
                     <svg version="1.1" viewBox="0 0 10 16" class="octicon hr-1" aria-hidden="true">
                         <use xlink:href="#chevron-right" />
                     </svg>
-                </a>
+                </a> -->
             </div>
 
             <div class="col-md-6 col-lg-4 advantages-section__item">
@@ -318,11 +448,11 @@
                 </h3>
                 <p class="text-muted advantages-section__item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua.</p>
-                <a href="javascript:void(0)" class="read-more">Подробнее
+                <!-- <a href="javascript:void(0)" class="read-more" data-toggle="modal" data-target="#linkModal">Подробнее
                     <svg version="1.1" viewBox="0 0 10 16" class="octicon hr-1" aria-hidden="true">
                         <use xlink:href="#chevron-right" />
                     </svg>
-                </a>
+                </a> -->
             </div>
 
             <div class="col-md-6 col-lg-4 advantages-section__item">
@@ -332,11 +462,11 @@
                 </h3>
                 <p class="text-muted advantages-section__item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua.</p>
-                <a href="javascript:void(0)" class="read-more">Подробнее
+                <!-- <a href="javascript:void(0)" class="read-more" data-toggle="modal" data-target="#linkModal">Подробнее
                     <svg version="1.1" viewBox="0 0 10 16" class="octicon hr-1" aria-hidden="true">
                         <use xlink:href="#chevron-right" />
                     </svg>
-                </a>
+                </a> -->
             </div>
 
             <div class="col-md-6 col-lg-4 advantages-section__item">
@@ -346,11 +476,11 @@
                 </h3>
                 <p class="text-muted advantages-section__item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua.</p>
-                <a href="javascript:void(0)" class="read-more">Подробнее
+                <!-- <a href="javascript:void(0)" class="read-more" data-toggle="modal" data-target="#linkModal">Подробнее
                     <svg version="1.1" viewBox="0 0 10 16" class="octicon hr-1" aria-hidden="true">
                         <use xlink:href="#chevron-right" />
                     </svg>
-                </a>
+                </a> -->
             </div>
 
         </div>
@@ -488,7 +618,7 @@
                 <p class="text-muted corp-style__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, libero? Ipsam soluta, ducimus eos et
                     quasi itaque facilis voluptatum. A, animi totam. Veniam sit recusandae modi, sequi ipsa molestias, laboriosam
                     dolorem architecto alias totam at quas ab impedit, quisquam quibusdam quaerat? Sint!</p>
-                <button class="btn custom-rounded btn-purple btn-sm px-2_5" type="button">Заказать</button>
+                <button class="btn custom-rounded btn-purple btn-sm px-2_5" type="button" data-toggle="modal" data-target="#corpStyleModal">Заказать</button>
             </div>
             <div class="col-sm-4 col-md-6 pl-lg-4 pt-sm-5 pt-md-0 order-1 order-sm-2">
                 <div class="fixed-aspect-ratio-container mt-sm-5 mt-md-0">
@@ -662,6 +792,7 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script>
@@ -676,8 +807,16 @@
         $(document).on("click", function (event) {
             var $trigger = $(".navbar-collapse.collapse.show");
             var $menuItem = $(".navbar-collapse.collapse.show a.nav-link");
+            var $popover = $('[data-toggle="popover"]');
             if (($trigger !== event.target && !$trigger.has(event.target).length) || ($menuItem !== event.target && !$menuItem.has(event.target).length)) {
-                $('.navbar-collapse.collapse.show').removeClass('show')
+                $('.navbar-collapse.collapse.show').removeClass('show');
+                console.log('FIRED')
+            }
+            if ($popover !== event.target && !$popover.has(event.target).length) {
+                if ($('.popover.show').length) {
+                    // $('[data-toggle="popover"]').popover('hide');
+                    // console.log('fired')
+                }
             }
         });
 
@@ -686,6 +825,10 @@
                 scrollTop: $($(this).data('scrollto')).offset().top - 70
             }, 500);
         });
+
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
     </script>
     <script type="text/javascript" src="js/main.b5726b6b.js"></script>
 </body>

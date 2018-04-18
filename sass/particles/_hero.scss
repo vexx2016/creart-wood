@@ -1,6 +1,7 @@
 .hero-section {
     background-color: $color-purple;
     background-size: cover;
+    background-position: bottom center;
     @include media('<=993px') {
         background-image: url('../img/jumbotron/scale_w_993.jpg');
     }
@@ -38,6 +39,7 @@
     .jumbotron {
         background-color: transparent;
         min-height: 34.8rem;
+        background-image: linear-gradient( 90deg, rgba(44, 63, 182, .8) 0%, rgba(44, 63, 182, 0.75) 10%, transparent 85%);
     }
     h1 {
         line-height: 1;

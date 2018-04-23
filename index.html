@@ -385,18 +385,18 @@
                     </ol> -->
                     <div class="carousel-inner">
                         <div class="carousel-item mb-5 active">
-                            <h1 class="fw-800">Лазерная резка</h1>
-                            <p class="col-md-8 col-lg-5 px-0">Порезка фанеры, ДВП, МДФ, картона, резины и других материалов.</p>
+                            <h1 class="fw-800 text-white">Лазерная резка</h1>
+                            <p class="col-md-8 col-lg-5 px-0 text-white">Порезка фанеры, ДВП, МДФ, картона, резины и других материалов.</p>
                         </div>
                         <div class="carousel-item mb-5">
-                            <h1 class="fw-800">Лазерная гравировка</h1>
-                            <p class="col-md-8 col-lg-5 px-0">Гравировка практически на любой поверхности, в том числе на коже, древесине, фанере, акриле и
+                            <h1 class="fw-800 text-white">Лазерная гравировка</h1>
+                            <p class="col-md-8 col-lg-5 px-0 text-white">Гравировка практически на любой поверхности, в том числе на коже, древесине, фанере, акриле и
                                 пр.
                             </p>
                         </div>
                         <div class="carousel-item mb-5">
-                            <h1 class="fw-800">Элементы корпоративного дизайна</h1>
-                            <p class="col-md-8 col-lg-5 px-0">Брендирование продукции, услуг или элементов декора вашим лого/слоганом/хэштегом.</p>
+                            <h1 class="fw-800 text-white">Элементы корпоративного дизайна</h1>
+                            <p class="col-md-8 col-lg-5 px-0 text-white">Брендирование продукции, услуг или элементов декора вашим лого/слоганом/хэштегом.</p>
                         </div>
                     </div>
                     <a class="" href="#carouselHeroIndicators" role="button" data-slide="prev">
@@ -856,7 +856,7 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script>
@@ -895,13 +895,11 @@
         })
 
         $('#linkModal').on('show.bs.modal', function (event) {
-            var link = $(event.relatedTarget) // link that triggered the modal
-            var title = link.data('title'); // Extract info from data-* attributes
-            var messageFirst = link.data('message-first'); // Extract info from data-* attributes
-            var messageSecond = link.data('message-second'); // Extract info from data-* attributes
-            var messageThird = link.data('message-third'); // Extract info from data-* attributes
-            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            var link = $(event.relatedTarget)
+            var title = link.data('title');
+            var messageFirst = link.data('message-first');
+            var messageSecond = link.data('message-second'); 
+            var messageThird = link.data('message-third');
             var modal = $(this)
             console.log(modal)
             modal.find('.modal-title').text(title)
@@ -910,7 +908,7 @@
             modal.find('.modal-body p + p + p').text(messageThird)
         })
     </script>
-    <script type="text/javascript" src="js/main.b5726b6b.js"></script>
+    <script type="text/javascript" src="js/main.b5726b6b.js" defer></script>
 </body>
 
 </html>

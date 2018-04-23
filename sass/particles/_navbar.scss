@@ -10,13 +10,6 @@
     }
     .container-fluid {
         position: relative;
-        /* @include media('>'+$grid-breakpoint-lg) {
-            margin-right: 1.4rem;
-            margin-left: 1.4rem;
-        } */
-        /*  @include media('>'+$grid-breakpoint-md, '<='+$grid-breakpoint-lg) {
-            max-width: 840px;
-        } */
     }
     .order-bar {
         .input-group-prepend label {

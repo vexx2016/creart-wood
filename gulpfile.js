@@ -4,6 +4,8 @@ var sass = require('gulp-sass');
 var cssmin = require('gulp-cssmin');
 var rename = require("gulp-rename");
 var combineMq = require('gulp-combine-mq');
+var postcss = require('gulp-postcss');
+var cssnano = require('cssnano');
 
 
 //autoprefixer
@@ -17,6 +19,10 @@ gulp.task('aprefix', () =>
 );
 
 gulp.task('sass', function () {
+    var plugins = [
+        cssnano()
+    ];
+
     return gulp.src('./sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(combineMq({
@@ -25,7 +31,7 @@ gulp.task('sass', function () {
         .pipe(autoprefixer({
             browsers: ['last 15 versions']
         }))
-        .pipe(cssmin())
+        .pipe(postcss(plugins))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('./css'));
 });

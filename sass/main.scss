@@ -9,7 +9,6 @@
 @import 'particles/_corp-style';
 @import 'particles/_contacts-section';
 @import 'particles/_examples-section';
-
 /* @import 'particles/_hero-section';
 @import 'particles/_projects';
 @import 'particles/_subscribe';
@@ -27,28 +26,28 @@
 
 .fw- {
     &100 {
-        font-weight: 100!important;
+        font-weight: 100 !important;
     }
     &200 {
-        font-weight: 200!important;
+        font-weight: 200 !important;
     }
     &400 {
-        font-weight: 400!important;
+        font-weight: 400 !important;
     }
     &500 {
-        font-weight: 500!important;
+        font-weight: 500 !important;
     }
     &600 {
-        font-weight: 600!important;
+        font-weight: 600 !important;
     }
     &700 {
-        font-weight: 700!important;
+        font-weight: 700 !important;
     }
     &800 {
-        font-weight: 800!important;
+        font-weight: 800 !important;
     }
     &900 {
-        font-weight: 900!important;
+        font-weight: 900 !important;
     }
 }
 
@@ -80,8 +79,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     padding-top: 69px;
     color: $txt-color-primary;
+    &.modal-open {
+        .content {
+            filter: grayscale(90%);
+        }
+    }
 }
-
 
 /* button.btn:not(.btn-outline-primary) {
     @include interpolate(font-size,
@@ -124,7 +127,7 @@ body {
 } */
 
 .custom-rounded {
-    border-radius: 32px!important;
+    border-radius: 32px !important;
 }
 
 .btn-outline-secondary:not([disabled]):not(.disabled).active,
@@ -221,8 +224,8 @@ a:hover {
 
 .p {
     &x-2_5 {
-        padding-right: 2.5rem!important;
-        padding-left: 2.5rem!important;
+        padding-right: 2.5rem !important;
+        padding-left: 2.5rem !important;
     }
 }
 

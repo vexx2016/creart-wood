@@ -36,9 +36,9 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p></p>
-                    <p></p>
-                    <p></p>
+                    <p class="text-justify small"></p>
+                    <p class="text-justify small"></p>
+                    <p class="text-justify small"></p>
                 </div>
                 <div class="modal-footer text-center">
                     <button type="button" class="btn custom-rounded btn-purple btn-sm px-3 mx-auto" data-dismiss="modal">Закрыть</button>
@@ -60,11 +60,13 @@
                 <div class="modal-body">
                     <div class="row justify-content-center">
                         <div class="col-12">
-                            <p class="small">
+                            <p class="small mb-2 text-justify">
                                 Используйте любой удобный для вас способ связи, указанный ниже. Менеджер поможет оформить заказ готовой продукции или сделает
                                 расчет нужного вам изделия.
-                                <br/>Индивидуальный подход к каждому клиенту с учётом требований к дизайну и стилю. Также имеются
-                                готовые прайс-листы с указанными размерами и ценами.
+                            </p>
+                            <p class="small text-justify">
+                                Индивидуальный подход к каждому клиенту с учётом требований к дизайну и стилю. Также имеются готовые прайс-листы с указанными
+                                размерами и ценами.
                             </p>
                         </div>
                         <div class="col-sm-6 p-sm-0">
@@ -85,7 +87,7 @@
                                     <svg version="1.1" viewBox="0 0 10 16" class="octicon text-muted hr-2 mr-2 align-middle" aria-hidden="true">
                                         <use xlink:href="#location" />
                                     </svg>
-                                    ул. Прямая, д. 9
+                                    г.Львов, ул В.Великого, 50
                                 </li>
                             </ul>
                         </div>
@@ -131,7 +133,7 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-12">
-                            <p class="mb-4">Любой коммерческий проект нуждается в качественном корпоративном стиле, поэтому консультация
+                            <p class="mb-4 small text-justify">Любой коммерческий проект нуждается в качественном корпоративном стиле, поэтому консультация
                                 с дизайнером в данном случае обязательна. Менеджер подготовит варианты дизайна с оценками
                                 стоимости и времени работы.</p>
                         </div>
@@ -155,7 +157,7 @@
                                     <svg version="1.1" viewBox="0 0 10 16" class="octicon text-muted hr-2 mr-2 align-middle" aria-hidden="true">
                                         <use xlink:href="#location" />
                                     </svg>
-                                    ул. Прямая, д. 9
+                                    г.Львов, ул В.Великого, 50
                                 </li>
                             </ul>
                         </div>
@@ -190,7 +192,7 @@
 
     <!-- Modal -->
     <div class="modal fade" id="consultModal" tabindex="-1" role="dialog" aria-labelledby="consultModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-dialog modal-dialog-centered max-width-300 mx-auto" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="consultModalLabel">Консультация</h5>
@@ -203,13 +205,13 @@
                         <div class="col-12">
                             <ul class="list-unstyled popover-consult">
                                 <li class="fw-300">
-                                    <svg version="1.1" viewBox="0 0 10 16" class="octicon text-muted hr-1 mr-3" aria-hidden="true">
+                                    <svg version="1.1" viewBox="0 0 10 16" class="octicon text-muted hr-2 mr-2 align-middle" aria-hidden="true">
                                         <use xlink:href="#device-mobile" />
                                     </svg>
                                     <a href="tel:+380984978949">+38 098 49 789 49</a>
                                 </li>
                                 <li class="fw-300">
-                                    <svg version="1.1" viewBox="0 0 10 16" class="octicon text-muted hr-1 mr-3" aria-hidden="true">
+                                    <svg version="1.1" viewBox="0 0 10 16" class="octicon text-muted hr-2 mr-2 align-middle" aria-hidden="true">
                                         <use xlink:href="#mail" />
                                     </svg>
                                     <a href="mailto:creartwood@gmail.com">creartwood@gmail.com</a>
@@ -349,7 +351,7 @@
                         <a class="nav-link" href="javascript:void(0)" data-scrollto="#examples-section">Примеры работ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)" data-scrollto="#feedbacks-section">Отзывы</a>
+                        <a class="nav-link" href="javascript:void(0)" data-scrollto="#feedbacks-section">Наши клиенты</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="javascript:void(0)" data-scrollto="#corp-style">Корпоративный стиль</a>
@@ -364,7 +366,7 @@
                     <div class="d-inline-block mx-auto">
                         <div class="input-group input-group-sm order-bar mr-md-2 d-flex d-md-none">
                             <div class="input-group-prepend">
-                                <label class="input-group-text custom-rounded bg-white pl-3">Консультация</label>
+                                <label class="input-group-text custom-rounded bg-white pl-3" data-toggle="modal" data-target="#consultModal">Консультация</label>
                             </div>
                             <button class="btn custom-rounded btn-purple btn-sm px-2_5" type="button" data-toggle="modal" data-target="#howToOrderModal">Как заказать</button>
                         </div>
@@ -723,7 +725,7 @@
                             <svg version="1.1" viewBox="0 0 10 16" class="octicon text-muted hr-2 mr-3" aria-hidden="true">
                                 <use xlink:href="#location" />
                             </svg>
-                            ул. Прямая, д. 9
+                            г.Львов, ул В.Великого, 50
                         </li>
                     </ul>
                 </div>
@@ -898,7 +900,7 @@
             var link = $(event.relatedTarget)
             var title = link.data('title');
             var messageFirst = link.data('message-first');
-            var messageSecond = link.data('message-second'); 
+            var messageSecond = link.data('message-second');
             var messageThird = link.data('message-third');
             var modal = $(this)
             console.log(modal)

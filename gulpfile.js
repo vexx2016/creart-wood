@@ -10,7 +10,7 @@ var cssnano = require('cssnano');
 
 //autoprefixer
 gulp.task('aprefix', () =>
-    gulp.src('src/app.css')
+    gulp.src('./src/app.css')
         .pipe(autoprefixer({
             browsers: ['last 10 versions'],
             cascade: false
